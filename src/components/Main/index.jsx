@@ -10,7 +10,7 @@ const getImages = () => {
   while (!err.length && cnt < 17) {
     const im = `/imgs/shoes/shoe_${cnt}.jpg`
     cnt++
-    arr.push(<img src={im}></img>)
+    arr.push(<img loading='lazy' src={im}></img>)
   }
   return arr
 }
